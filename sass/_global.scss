@@ -1,0 +1,82 @@
+@import 'compass/reset';
+@import './var';
+@import './mixin';
+@import './width';
+@import './btn';
+html,
+body {
+    overflow: hidden;
+    background-color: #E0E1E6;
+    height: 100%;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    line-height: 1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+td,
+th {
+    font-family: $fontFamily;
+}
+
+li {
+    list-style: none;
+}
+
+@include placeholder($placeholderColor);
+input,
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid $borderColor;
+    resize: none;
+    outline: none;
+    font-family: $fontFamily;
+    margin: 0;
+    padding: 0 $margin/2;
+    font-size: $fontSize;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+textarea {
+    padding: $margin;
+}
+
+.header-top {
+    height: $titleHeight;
+    line-height: $titleHeight;
+    padding: 0 $margin;
+    background-color: $mainColor;
+    color: #ffffff;
+}
+
+//layout
+.layout-a {
+    display: -webkit-box;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    .layout-a-up {}
+    .layout-a-down {
+        -webkit-box-flex: 1;
+    }
+}
+
+.flex-1 {
+    display: flex;
+    align-items: streatch;
+    justify-content: space-between;
+}

@@ -1,0 +1,49 @@
+@import 'global';
+textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+input {}
+
+.left {
+    width: 45%;
+    textarea {
+        background-color: #454545;
+        color: #ffffff;
+    }
+    @include placeholder(#eee);
+}
+
+.middle {
+    width: 10%;
+    background-color: #353535;
+    color: #ffffff;
+}
+
+.right {
+    width: 45%;
+}
+
+ul {
+    height: 100%;
+    display: flex;
+    align-items: streatch;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+li {
+    height: 100%;
+    border-top: 1px solid #4e4c4c;
+    border-bottom: 1px solid #333333;
+    label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        cursor: pointer;
+    }
+}

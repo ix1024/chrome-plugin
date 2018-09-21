@@ -1,0 +1,56 @@
+@import 'global';
+.flex-1 {
+    &,
+    &>div {
+        border: 10px solid $borderColor;
+    }
+    &>div {
+        width: 33.333%;
+    }
+}
+
+.result {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    height: 100%;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+li {
+    line-height: 2;
+}
+
+.layout-a-down {
+    position: relative;
+}
+
+.layout-a .layout-a-up {
+    &,
+    .btn-1,
+    select,
+    input {
+        min-height: $titleHeight;
+        line-height: $titleHeight;
+    }
+    .btn-1,
+    select,
+    input {
+        vertical-align: top;
+        border: none;
+    }
+}
+
+.flex-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

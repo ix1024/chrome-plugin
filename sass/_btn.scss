@@ -1,0 +1,18 @@
+@import './var';
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    @include transition(all 0.25s linear);
+    border: none;
+    padding: 0 $margin;
+    margin: 0;
+    &:hover {
+        opacity: 0.75;
+    }
+}
+
+.btn-1 {
+    @extend .btn;
+    background-color: $mainColor;
+    color: #ffffff;
+}

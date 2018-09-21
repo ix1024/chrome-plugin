@@ -1,0 +1,1 @@
+babel src -d app/js --watch
